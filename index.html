@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <title>E-LEC</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"
+        ><img src="assets/img/logo.png" class="pl-5"
+      /></a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link" href="#candidate">Candidate</a>
+          </li>
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link" href="#">Guide</a>
+          </li>
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link" href="#">Vote</a>
+          </li>
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item px-2 text-center bg-warning nav-login">
+            <a class="nav-link text-white" href="#"
+              ><i class="fa fa-sign-in-alt"></i> Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12" data-aos="fade-up">
+            <div class="py-5 my-5">
+              <h1 class="text-welcome">Welcome to E-LEC</h1>
+              <p class="py-3 text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                provident pariatur architecto voluptas praesentium illo iusto
+                officiis vel, reprehenderit laboriosam consequuntur ullam
+                maxime, aliquid ipsa dignissimos facilis, nam alias hic.
+              </p>
+              <button class="btn btn-lg btn-warning text-white rounded">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 d-lg-block d-none" data-aos="fade-up">
+            <img src="assets/img/logo2.png" class="w-100" />
+          </div>
+        </div>
+      </div>
+      <svg
+        style="margin-top: -200px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#f9ca24"
+          fill-opacity="1"
+          d="M0,160L34.3,176C68.6,192,137,224,206,245.3C274.3,267,343,277,411,250.7C480,224,549,160,617,149.3C685.7,139,754,181,823,202.7C891.4,224,960,224,1029,229.3C1097.1,235,1166,245,1234,229.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="w-100 candidate" id="candidate">
+        <center>
+          <h1 class="text-white font-weight-bold">Our Candidate</h1>
+        </center>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 text-center" data-aos="flip-left">
+              <img
+                src="assets/img/candidate-1.png"
+                class="w-50 img-candidate rounded-circle"
+              />
+              <h3 class="text-white mt-3 mb-3">Asnur Ramdani</h3>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center" data-aos="flip-left">
+              <img
+                src="assets/img/candidate-1.png"
+                class="w-50 img-candidate rounded-circle"
+              />
+              <h3 class="text-white mt-3 mb-3">Ayyas Mumtaz</h3>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center" data-aos="flip-left">
+              <img
+                src="assets/img/candidate-1.png"
+                class="w-50 img-candidate rounded-circle"
+              />
+              <h3 class="text-white mt-3 mb-3">Fahmi Alfiyansyah</h3>
+            </div>
+          </div>
+        </div>
+        <center class="mt-5 text-white countown">
+          <h1 id="demo" class="d-inline"></h1>
+          <h1 class="d-inline">To Election Day</h1>
+          <h1 class="mt-3 mb-3" data-aos="fade-up">
+            <a href="#vote" class="text-white arrow-vote rounded-circle p-2"
+              ><i class="fa fa-arrow-down"></i
+            ></a>
+          </h1>
+        </center>
+      </div>
+      <svg
+        style="margin-top: -60px"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#f9ca24"
+          fill-opacity="1"
+          d="M0,96L26.7,90.7C53.3,85,107,75,160,101.3C213.3,128,267,192,320,202.7C373.3,213,427,171,480,176C533.3,181,587,235,640,266.7C693.3,299,747,309,800,277.3C853.3,245,907,171,960,144C1013.3,117,1067,139,1120,133.3C1173.3,128,1227,96,1280,90.7C1333.3,85,1387,107,1413,117.3L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+        ></path>
+      </svg>
+    </header>
+    <div class="guide mb-5">
+      <div class="container">
+        <h1 align="center" class="font-weight-bold text-title">Guide</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-timeline6">
+              <div class="timeline" data-aos="fade-left">
+                <div class="timeline-content">
+                  <div class="content-inner mt-5">
+                    <span class="icon"><i class="fa fa-users"></i></span>
+                    <h3 class="title">Register</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer malesuada tellus lorem, et condimentum neque
+                      commodo quis. Quisque eu ornare risus, vitae fermentum
+                      eros. Etiam venenatis ac.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" data-aos="fade-right">
+                <div class="timeline-content">
+                  <div class="content-inner mt-5">
+                    <span class="icon"><i class="fa fa-sign-in-alt"></i></span>
+                    <h3 class="title">Login</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer malesuada tellus lorem, et condimentum neque
+                      commodo quis. Quisque eu ornare risus, vitae fermentum
+                      eros. Etiam venenatis ac.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" data-aos="fade-left">
+                <div class="timeline-content">
+                  <div class="content-inner mt-5">
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <h3 class="title">Choose Candidate</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer malesuada tellus lorem, et condimentum neque
+                      commodo quis. Quisque eu ornare risus, vitae fermentum
+                      eros. Etiam venenatis ac.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline" data-aos="fade-right">
+                <div class="timeline-content">
+                  <div class="content-inner mt-5">
+                    <span class="icon"><i class="fa fa-sign-out-alt"></i></span>
+                    <h3 class="title">Sign Out</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer malesuada tellus lorem, et condimentum neque
+                      commodo quis. Quisque eu ornare risus, vitae fermentum
+                      eros. Etiam venenatis ac.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
