@@ -21,6 +21,89 @@
     <title>E-LEC</title>
   </head>
   <body>
+    <div
+      class="modal fade vote-candidate"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h4 class="font-weight-bold">
+              <i class="fa fa-users"></i> Choose Candidate
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label>
+                  <input
+                    type="radio"
+                    class="input-vote-candidate"
+                    value="asnur"
+                    name="candidate"
+                  />
+                  <img
+                    class="w-100 img-vote-candidate border mb-2"
+                    src="assets/img/Political Candidate-pana.png"
+                  />
+                  <h4 class="text-title text-center font-weight-bold">Asnur</h4>
+                </label>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>
+                  <input
+                    type="radio"
+                    class="input-vote-candidate"
+                    value="ayyas"
+                    name="candidate"
+                  />
+                  <img
+                    class="w-100 img-vote-candidate border mb-2"
+                    src="assets/img/Political Candidate-pana.png"
+                  />
+                  <h4 class="text-title text-center font-weight-bold">Ayyas</h4>
+                </label>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label>
+                  <input
+                    type="radio"
+                    class="input-vote-candidate"
+                    value="fahmi"
+                    name="candidate"
+                  />
+                  <img
+                    class="w-100 img-vote-candidate border mb-2"
+                    src="assets/img/Political Candidate-pana.png"
+                  />
+                  <h4 class="text-title text-center font-weight-bold">Fahmi</h4>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-warning">
+            <a
+              href="success-vote.html"
+              class="btn btn-md btn-success font-weight-bold"
+            >
+              <i class="fa fa-paper-plane"></i> Send
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <button
         class="navbar-toggler"
@@ -52,10 +135,13 @@
             <a class="nav-link" href="#vote">Vote</a>
           </li>
           <li class="nav-item px-2 text-center">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#article">Article</a>
+          </li>
+          <li class="nav-item px-2 text-center">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item px-2 text-center bg-warning nav-login">
-            <a class="nav-link text-white" href="#"
+            <a class="nav-link text-white" href="login.html"
               ><i class="fa fa-sign-in-alt"></i> Login</a
             >
           </li>
@@ -79,8 +165,11 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 d-lg-block d-none" data-aos="fade-up">
-            <img src="assets/img/logo2.png" class="w-100" />
+          <div
+            class="col-lg-6 col-sm-12 d-lg-block d-none"
+            data-aos="fade left"
+          >
+            <img src="assets/img/logo2.png" class="w-100 bg-header" />
           </div>
         </div>
       </div>
@@ -126,7 +215,8 @@
         </div>
         <center class="mt-5 text-white countown">
           <h1 id="demo" class="d-inline"></h1>
-          <h1 class="d-inline">To Election Day</h1>
+          <br /><br />
+          <h1 class="d-block text-election">To Election Day</h1>
           <h1 class="mt-3 mb-3" data-aos="fade-up">
             <a href="#vote" class="text-white arrow-vote rounded-circle p-2"
               ><i class="fa fa-arrow-down"></i
@@ -135,7 +225,7 @@
         </center>
       </div>
       <svg
-        style="margin-top: -60px"
+        style="margin-top: -80px"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
@@ -147,56 +237,65 @@
       </svg>
     </header>
     <div class="guide mb-5" id="guide">
-      <div class="container">
-        <h1 align="center" class="font-weight-bold text-title mt-5 mb-5">
-          Guide
-        </h1>
+      <div class="container-fluid">
+        <center>
+          <h1 class="font-weight-bold text-title-big mt-5 mb-5">Guide</h1>
+          <p class="w-75">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            corporis debitis sunt corrupti tenetur nobis laudantium qui id
+            reiciendis fugit nihil laborum eveniet sint itaque culpa cupiditate
+            ducimus, fuga quibusdam.
+          </p>
+        </center>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center step">
             <div
               class="card step-guide"
               data-aos="fade down"
               data-aos-delay="100"
             >
               <div class="card-body">
-                <img src="assets/img/Mobile login-cuate.png" class="w-100" />
-                <h2 class="text-title font-weight-bold">1. Register</h2>
+                <img
+                  src="assets/img/Mobile login-cuate.png"
+                  class="img-guide"
+                />
+                <h4 class="text-title mt-2 font-weight-bold">1. Register</h4>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center step">
             <div
               class="card step-guide"
               data-aos="fade down"
               data-aos-delay="200"
             >
               <div class="card-body">
-                <img src="assets/img/Mobile login-pana.png" class="w-100" />
-                <h2 class="text-title font-weight-bold">2. Login</h2>
+                <img src="assets/img/Mobile login-pana.png" class="img-guide" />
+                <h4 class="text-title mt-2 font-weight-bold">2. Login</h4>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center step">
             <div
               class="card step-guide"
               data-aos="fade down"
               data-aos-delay="300"
             >
               <div class="card-body">
-                <img src="assets/img/Voting-amico.png" class="w-100" />
-                <h2 class="text-title font-weight-bold">3. Vote</h2>
+                <img src="assets/img/Voting-amico.png" class="img-guide" />
+                <h4 class="text-title mt-2 font-weight-bold">3. Vote</h4>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 text-center step">
             <div
               class="card step-guide"
               data-aos="fade down"
               data-aos-delay="400"
             >
               <div class="card-body">
-                <img src="assets/img/Done-rafiki.png" class="w-100" />
-                <h2 class="text-title font-weight-bold">4. Done</h2>
+                <img src="assets/img/Done-rafiki.png" class="img-guide" />
+                <h4 class="text-title mt-2 font-weight-bold">4. Done</h4>
               </div>
             </div>
           </div>
@@ -207,6 +306,7 @@
       style="margin-top: -160px"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
+      id="vote"
     >
       <path
         fill="#F9CA24"
@@ -214,6 +314,19 @@
         d="M0,160L24,170.7C48,181,96,203,144,202.7C192,203,240,181,288,186.7C336,192,384,224,432,213.3C480,203,528,149,576,133.3C624,117,672,139,720,154.7C768,171,816,181,864,170.7C912,160,960,128,1008,122.7C1056,117,1104,139,1152,144C1200,149,1248,139,1296,117.3C1344,96,1392,64,1416,48L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
       ></path>
     </svg>
+    <h1 class="text-vote">
+      Have You Voted ?...<br />
+      <center>
+        <a
+          data-toggle="modal"
+          data-target=".vote-candidate"
+          class="btn btn-md bg-white text-warning font-weight-bold rounded"
+        >
+          <i class="fa fa-vote-yea"></i> Vote
+        </a>
+      </center>
+    </h1>
+    <img class="img-detail" src="assets/img/Notes-cuate.png" />
     <svg
       style="margin-top: -10px"
       xmlns="http://www.w3.org/2000/svg"
@@ -225,11 +338,22 @@
         d="M0,224L120,192C240,160,480,96,720,106.7C960,117,1200,203,1320,245.3L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
       ></path>
     </svg>
-    <div class="container" id="vote" style="margin-top: -100px">
-      <h1 align="center" class="text-title font-weight-bold">Vote</h1>
+    <div class="container" style="margin-top: -20px">
+      <center>
+        <h1 align="center" class="text-title-big font-weight-bold">Vote</h1>
+        <p class="w-75">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          corporis debitis sunt corrupti tenetur nobis laudantium qui id
+          reiciendis fugit nihil laborum eveniet sint itaque culpa cupiditate
+          ducimus, fuga quibusdam.
+        </p>
+      </center>
       <div class="row">
         <div class="col-lg-6 col-sm-12">
-          <img class="w-100" src="assets/img/undraw_Pie_chart_re_bgs8.png" />
+          <img
+            class="w-100 bg-header"
+            src="assets/img/undraw_Pie_chart_re_bgs8.png"
+          />
         </div>
         <div class="col-lg-6 col-sm-12">
           <div class="card chart p-1 my-5">
@@ -254,6 +378,189 @@
         d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
       ></path>
     </svg>
+    <h1 class="text-white text-article font-weight-bold" id="article">
+      Article
+    </h1>
+    <img
+      src="assets/img/Publish article-rafiki.png"
+      class="img-title-article"
+    />
+    <svg
+      style="margin-top: -6px"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="300 70 1240 320"
+    >
+      <path
+        fill="#F9CA24"
+        fill-opacity="1"
+        d="M0,160L60,154.7C120,149,240,139,360,149.3C480,160,600,192,720,186.7C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="container" style="margin-top: -190px">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card rounded">
+            <center>
+              <img
+                class="card-img-top w-75 text-center"
+                src="assets/img/Online article-bro.png"
+              />
+            </center>
+            <div class="card-body">
+              <h3 class="text-title">Title Article</h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, obcaecati. Atque expedita ut laboriosam
+                necessitatibus eveniet deleniti possimus aspernatur libero
+                delectus blanditiis quo dolorem quasi, amet quia quaerat, et
+                veritatis.
+              </p>
+              <a class="btn btn-md btn-warning text-white" href=""
+                >Read More <i class="fa fa-book"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card rounded">
+            <center>
+              <img
+                class="card-img-top w-75 text-center"
+                src="assets/img/Online article-bro.png"
+              />
+            </center>
+            <div class="card-body">
+              <h3 class="text-title">Title Article</h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, obcaecati. Atque expedita ut laboriosam
+                necessitatibus eveniet deleniti possimus aspernatur libero
+                delectus blanditiis quo dolorem quasi, amet quia quaerat, et
+                veritatis.
+              </p>
+              <a class="btn btn-md btn-warning text-white" href=""
+                >Read More <i class="fa fa-book"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card rounded">
+            <center>
+              <img
+                class="card-img-top w-75 text-center"
+                src="assets/img/Online article-bro.png"
+              />
+            </center>
+            <div class="card-body">
+              <h3 class="text-title">Title Article</h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, obcaecati. Atque expedita ut laboriosam
+                necessitatibus eveniet deleniti possimus aspernatur libero
+                delectus blanditiis quo dolorem quasi, amet quia quaerat, et
+                veritatis.
+              </p>
+              <a class="btn btn-md btn-warning text-white" href=""
+                >Read More <i class="fa fa-book"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <button
+          class="
+            btn btn-lg
+            rounded
+            btn-warning
+            text-white
+            font-weight-bold
+            mt-5
+          "
+        >
+          More Article <i class="fa fa-arrow-right"></i>
+        </button>
+      </center>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <center>
+      <h1 class="text-title-big font-weight-bold">Contact</h1>
+      <p class="w-75">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis
+        debitis sunt corrupti tenetur nobis laudantium qui id reiciendis fugit
+        nihil laborum eveniet sint itaque culpa cupiditate ducimus, fuga
+        quibusdam.
+      </p>
+    </center>
+
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row mx-5 my-5">
+            <div class="col-md-6 mb-3">
+              <label class="font-weight-bold"
+                ><i class="fa fa-user"></i> Name</label
+              >
+              <input
+                type="text"
+                class="form-control form-contact"
+                placeholder="Input Your Name"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="font-weight-bold"
+                ><i class="fa fa-mail-bulk"></i> E-Mail</label
+              >
+              <input
+                type="email"
+                class="form-control form-contact"
+                placeholder="Input Your Email"
+              />
+            </div>
+            <div class="col-md-12">
+              <label class="font-weight-bold"
+                ><i class="fa fa-inbox"></i> Message</label
+              >
+              <textarea
+                class="form-control form-contact"
+                rows="5"
+                placeholder="Input Your Message"
+              ></textarea>
+              <button
+                type="button"
+                class="btn btn-md btn-warning text-white mt-4"
+              >
+                <i class="fa fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="assets/img/Get in touch-cuate.png"
+            class="w-100 mx-5 my-5 bg-header"
+          />
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn btn-md btn-up-page p-2"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="margin-top: -100px"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#F9CA24"
+        fill-opacity="1"
+        d="M0,96L24,122.7C48,149,96,203,144,202.7C192,203,240,149,288,160C336,171,384,245,432,240C480,235,528,149,576,122.7C624,96,672,128,720,128C768,128,816,96,864,90.7C912,85,960,107,1008,96C1056,85,1104,43,1152,74.7C1200,107,1248,213,1296,218.7C1344,224,1392,128,1416,80L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+      ></path>
+    </svg>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -278,6 +585,16 @@
     ></script>
     <script>
       AOS.init();
+      $(window).scroll(scrollpage);
+      function scrollpage() {
+        console.log($(window).scrollTop());
+        var y = $(window).scrollTop();
+        if (y > 400) {
+          $(".btn-up-page").show();
+        } else {
+          $(".btn-up-page").hide();
+        }
+      }
       var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
       var x = setInterval(function () {
