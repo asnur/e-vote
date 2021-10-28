@@ -106,7 +106,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <button
-        class="navbar-toggler"
+        class="navbar-toggler navbar-toggler-right"
         type="button"
         data-toggle="collapse"
         data-target="#navbarTogglerDemo03"
@@ -114,7 +114,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">&nbsp;</span>
       </button>
       <a class="navbar-brand" href="#"
         ><img src="assets/img/logo.png" class="pl-5"
@@ -155,21 +155,17 @@
             <div class="py-5 my-5">
               <h1 class="text-welcome">Welcome to E-LEC</h1>
               <p class="py-3 text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                provident pariatur architecto voluptas praesentium illo iusto
-                officiis vel, reprehenderit laboriosam consequuntur ullam
-                maxime, aliquid ipsa dignissimos facilis, nam alias hic.
+                Let's elect your chairman for another one-year term. With you
+                following this election, you have been very constructive for
+                this organization in carrying out its work program.
               </p>
               <button class="btn btn-lg btn-warning text-white rounded">
                 Read More
               </button>
             </div>
           </div>
-          <div
-            class="col-lg-6 col-sm-12 d-lg-block d-none"
-            data-aos="fade left"
-          >
-            <img src="assets/img/logo2.png" class="w-100 bg-header" />
+          <div class="col-lg-6 col-sm-12 text-center" data-aos="fade left">
+            <img src="assets/img/logo2.png" class="bg-header" />
           </div>
         </div>
       </div>
@@ -320,7 +316,14 @@
         <a
           data-toggle="modal"
           data-target=".vote-candidate"
-          class="btn btn-md bg-white text-warning font-weight-bold rounded"
+          class="
+            btn btn-md
+            bg-white
+            text-warning
+            font-weight-bold
+            rounded
+            btn-vote
+          "
         >
           <i class="fa fa-vote-yea"></i> Vote
         </a>
@@ -338,7 +341,7 @@
         d="M0,224L120,192C240,160,480,96,720,106.7C960,117,1200,203,1320,245.3L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
       ></path>
     </svg>
-    <div class="container" style="margin-top: -20px">
+    <div class="container" style="margin-top: -10px">
       <center>
         <h1 align="center" class="text-title-big font-weight-bold">Vote</h1>
         <p class="w-75">
@@ -348,7 +351,7 @@
           ducimus, fuga quibusdam.
         </p>
       </center>
-      <div class="row">
+      <div class="row section-data-vote">
         <div class="col-lg-6 col-sm-12">
           <img
             class="w-100 bg-header"
@@ -386,7 +389,7 @@
       class="img-title-article"
     />
     <svg
-      style="margin-top: -6px"
+      style="margin-top: -7px"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="300 70 1240 320"
     >
@@ -396,9 +399,9 @@
         d="M0,160L60,154.7C120,149,240,139,360,149.3C480,160,600,192,720,186.7C840,181,960,139,1080,112C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
       ></path>
     </svg>
-    <div class="container" style="margin-top: -190px">
+    <div class="container" style="margin-top: -15%">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
           <div class="card rounded">
             <center>
               <img
@@ -421,7 +424,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
           <div class="card rounded">
             <center>
               <img
@@ -444,7 +447,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-5">
           <div class="card rounded">
             <center>
               <img
@@ -538,10 +541,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 text-center">
           <img
             src="assets/img/Get in touch-cuate.png"
-            class="w-100 mx-5 my-5 bg-header"
+            class="w-75 my-5 bg-header"
           />
         </div>
       </div>
@@ -585,6 +588,7 @@
     ></script>
     <script>
       AOS.init();
+      $(".btn-up-page").hide();
       $(window).scroll(scrollpage);
       function scrollpage() {
         console.log($(window).scrollTop());

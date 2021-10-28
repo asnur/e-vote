@@ -34,6 +34,7 @@ header {
 
 .bg-header {
   position: relative;
+  width: 100%;
   animation: example 2s;
   animation-iteration-count: 99999;
 }
@@ -186,9 +187,9 @@ header {
 .step:not(:first-child)::before {
   content: "";
   display: block;
-  width: 8rem;
-  left: -4rem;
-  top: 7rem;
+  width: 39%;
+  left: -20%;
+  top: 40%;
   position: absolute;
   border: 2px #f9ca24 dashed;
 }
@@ -210,7 +211,7 @@ header {
   object-fit: cover;
   position: absolute;
   right: 0;
-  margin-top: -200px;
+  margin-top: -14%;
 }
 
 .text-vote {
@@ -218,7 +219,7 @@ header {
   color: white;
   left: 32%;
   margin-top: -50px;
-  font-size: 55px;
+  font-size: 50px;
 }
 
 .form-contact {
@@ -326,4 +327,148 @@ header {
 .text-article {
   position: absolute;
   left: 45%;
+}
+
+@media screen and (max-width: 990px) {
+  .guide {
+    margin-top: 1990px;
+  }
+
+  .text-article {
+    font-size: 40px;
+    margin-top: -30px;
+  }
+
+  .section-data-vote {
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+
+  .step:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 39%;
+    left: -20%;
+    top: 40%;
+    position: absolute;
+    border: 2px #f9ca24 dashed;
+  }
+
+  .step:nth-child(3)::before {
+    top: -4rem;
+    left: 65%;
+    width: 65%;
+    transform: rotate(140deg);
+  }
+
+  .text-vote {
+    font-size: 35px;
+    left: 30%;
+  }
+
+  .btn-vote {
+    padding: 3px;
+    margin-top: 10px;
+  }
+
+  .bg-header {
+    width: 80%;
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .guide {
+    margin-top: 1950px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .guide {
+    margin-top: 1550px;
+  }
+
+  .text-vote {
+    font-size: 25px;
+  }
+
+  .text-article {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .step:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 10%;
+    left: 45%;
+    top: -5%;
+    position: absolute;
+    transform: rotate(90deg);
+    border: 2px #f9ca24 dashed;
+  }
+
+  .step:nth-child(3)::before {
+    width: 10%;
+    left: 45%;
+    top: -5%;
+    transform: rotate(90deg);
+  }
+
+  #demo {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text-welcome {
+    font-size: 40px;
+  }
+
+  .guide {
+    margin-top: 1400px;
+  }
+
+  .step:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 12%;
+    left: 45%;
+    top: -7%;
+    position: absolute;
+    transform: rotate(90deg);
+    border: 2px #f9ca24 dashed;
+  }
+
+  .step:nth-child(3)::before {
+    width: 12%;
+    left: 45%;
+    top: -7%;
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .guide {
+    margin-top: 1000px;
+  }
+  #demo {
+    font-size: 30px;
+  }
+
+  .text-vote {
+    left: 15%;
+    margin-top: -20px;
+  }
+
+  .btn-vote {
+    border: 1px #f9ca24 solid;
+  }
+
+  .text-article {
+    left: 35%;
+  }
 }
