@@ -33,6 +33,10 @@
       href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"
+    />
     <style>
       table > tbody > tr > * {
         vertical-align: middle;
@@ -307,7 +311,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">Data Article</span>
+              <span class="nav-link-text ms-1">Data Voting</span>
             </a>
           </li>
           <li class="nav-item">
@@ -689,9 +693,12 @@
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="assets/js/style.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#myTable").DataTable();
+        $("#myTable").DataTable({
+          responsive: true,
+        });
       });
     </script>
   </body>
