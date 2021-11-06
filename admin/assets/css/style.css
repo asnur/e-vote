@@ -4,27 +4,6 @@
   font-family: "Nanum Gothic", sans-serif;
   scroll-behavior: smooth;
 }
-.moving-tab {
-  z-index: 1 !important;
-}
-
-.moving-tab .nav-link {
-  color: #fff;
-  transition: 0.2s ease;
-  border-radius: 0.5rem;
-}
-
-.moving-tab .nav-link.active {
-  color: #fff;
-  font-weight: 600;
-  box-shadow: 0px 1px 5px 1px #ddd;
-  animation: 0.2s ease;
-  background: #fff;
-}
-
-.moving-tab .nav-link:hover:not(.active) {
-  color: #344767;
-}
 
 .page-item.active .page-link {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.09),
@@ -575,128 +554,6 @@ p {
 }
 
 
-.numInputWrapper {
-  position: relative;
-  height: auto;
-}
-
-.numInputWrapper input,
-.numInputWrapper span {
-  display: inline-block;
-}
-
-.numInputWrapper input {
-  width: 100%;
-}
-
-.numInputWrapper input::-ms-clear {
-  display: none;
-}
-
-.numInputWrapper input::-webkit-outer-spin-button,
-.numInputWrapper input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
-}
-
-.numInputWrapper span {
-  position: absolute;
-  right: 0;
-  width: 14px;
-  padding: 0 4px 0 2px;
-  height: 50%;
-  line-height: 50%;
-  opacity: 0;
-  cursor: pointer;
-  border: 1px solid rgba(57, 57, 57, 0.15);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.numInputWrapper span:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.numInputWrapper span:active {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.numInputWrapper span:after {
-  display: block;
-  content: "";
-  position: absolute;
-}
-
-.numInputWrapper span.arrowUp {
-  top: 0;
-  border-bottom: 0;
-}
-
-.numInputWrapper span.arrowUp:after {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid rgba(57, 57, 57, 0.6);
-  top: 26%;
-}
-
-.numInputWrapper span.arrowDown {
-  top: 50%;
-}
-
-.numInputWrapper span.arrowDown:after {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid rgba(57, 57, 57, 0.6);
-  top: 40%;
-}
-
-.numInputWrapper span svg {
-  width: inherit;
-  height: auto;
-}
-
-.numInputWrapper span svg path {
-  fill: rgba(0, 0, 0, 0.5);
-}
-
-.numInputWrapper:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.numInputWrapper:hover span {
-  opacity: 1;
-}
-
-
-.dayContainer {
-  padding: 0;
-  outline: 0;
-  text-align: left;
-  width: 307.875px;
-  min-width: 307.875px;
-  max-width: 307.875px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
-  opacity: 1;
-}
-
-.dayContainer + .dayContainer {
-  -webkit-box-shadow: -1px 0 0 #e6e6e6;
-  box-shadow: -1px 0 0 #e6e6e6;
-}
 
 
 @-webkit-keyframes fpFadeInDown {
@@ -922,3 +779,108 @@ button:hover {
     padding-bottom: 5px;
   }
 }
+
+
+/*
+  * Container style
+  */
+  .ps {
+    overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+  
+  /*
+    * Scrollbar rail styles
+    */
+  .ps__rail-x {
+    display: none;
+    opacity: 0;
+    transition: background-color 0.2s linear, opacity 0.2s linear;
+    -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+    height: 15px;
+    /* there must be 'bottom' or 'top' for ps__rail-x */
+    bottom: 0px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  
+  .ps__rail-y {
+    display: none;
+    opacity: 0;
+    transition: background-color 0.2s linear, opacity 0.2s linear;
+    -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+    width: 15px;
+    /* there must be 'right' or 'left' for ps__rail-y */
+    right: 0;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    display: block;
+    background-color: transparent;
+  }
+  
+  .ps:hover > .ps__rail-x,
+  .ps:hover > .ps__rail-y,
+  .ps--focus > .ps__rail-x,
+  .ps--focus > .ps__rail-y,
+  .ps--scrolling-x > .ps__rail-x,
+  .ps--scrolling-y > .ps__rail-y {
+    opacity: 0.6;
+  }
+  
+  .ps .ps__rail-x:hover,
+  .ps .ps__rail-y:hover,
+  .ps .ps__rail-x:focus,
+  .ps .ps__rail-y:focus,
+  .ps .ps__rail-x.ps--clicking,
+  .ps .ps__rail-y.ps--clicking {
+    background-color: #eee;
+    opacity: 0.9;
+  }
+  
+  /*
+    * Scrollbar thumb styles
+    */
+  .ps__thumb-x {
+    background-color: #aaa;
+    border-radius: 6px;
+    transition: background-color 0.2s linear, height 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s linear, height 0.2s ease-in-out;
+    height: 6px;
+    /* there must be 'bottom' for ps__thumb-x */
+    bottom: 2px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  
+  .ps__thumb-y {
+    background-color: #aaa;
+    border-radius: 6px;
+    transition: background-color 0.2s linear, width 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s linear, width 0.2s ease-in-out;
+    width: 6px;
+    /* there must be 'right' for ps__thumb-y */
+    right: 2px;
+    /* please don't change 'position' */
+    position: absolute;
+  }
+  
+  .ps__rail-x:hover > .ps__thumb-x,
+  .ps__rail-x:focus > .ps__thumb-x,
+  .ps__rail-x.ps--clicking .ps__thumb-x {
+    background-color: #999;
+    height: 11px;
+  }
+  
+  .ps__rail-y:hover > .ps__thumb-y,
+  .ps__rail-y:focus > .ps__thumb-y,
+  .ps__rail-y.ps--clicking .ps__thumb-y {
+    background-color: #999;
+    width: 11px;
+  }
